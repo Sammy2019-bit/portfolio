@@ -1,0 +1,6 @@
+{
+  "name": "Web Developer Portfolio",
+  "description": "An interactive, single-screen portfolio for a professional web developer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
