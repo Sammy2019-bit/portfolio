@@ -175,7 +175,7 @@ export default function App() {
         </header>
 
         {/* Synthesizer Rack Style Navigation Controls */}
-        <nav className="bg-slate-950/80 border border-slate-800/80 p-1.5 rounded-2xl flex flex-wrap gap-1 items-center" id="studio-console-navbar">
+        <nav className="bg-slate-950/80 border border-slate-800/80 p-1.5 rounded-2xl flex overflow-x-auto md:flex-wrap gap-1 items-center scrollbar-none" id="studio-console-navbar">
           {tabsConfig.map((tab) => {
             const isActive = currentTab === tab.id;
             return (
@@ -183,7 +183,7 @@ export default function App() {
                 key={tab.id}
                 id={`nav-tab-${tab.id}`}
                 onClick={() => setCurrentTab(tab.id)}
-                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-mono font-medium transition duration-200 capitalize relative ${
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-mono font-medium transition duration-200 capitalize relative shrink-0 ${
                   isActive 
                     ? 'text-white bg-slate-900 border border-slate-800/80' 
                     : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900/30'
@@ -210,7 +210,7 @@ export default function App() {
           {/* Right Column (Dynamic switchable pages) */}
           <div className="lg:col-span-8">
             <AnimatePresence mode="wait">
-              <div className="bg-slate-900/20 border border-slate-800/40 p-6 rounded-3xl" id="tab-content-container">
+              <div className="bg-slate-900/20 border border-slate-800/40 p-4 sm:p-6 rounded-2xl sm:rounded-3xl" id="tab-content-container">
                 {renderTabContent()}
               </div>
             </AnimatePresence>

@@ -69,13 +69,13 @@ export const AudioSkills: React.FC = () => {
       </div>
 
       {/* Category Tabs */}
-      <div className="flex flex-wrap gap-1.5 p-1 bg-slate-950/60 border border-slate-800/80 rounded-xl max-w-max">
+      <div className="flex overflow-x-auto gap-1.5 p-1 bg-slate-950/60 border border-slate-800/80 rounded-xl max-w-full scrollbar-none">
         {(['all', 'production', 'engineering', 'performance'] as const).map((cat) => (
           <button
             key={cat}
             id={`skill-cat-${cat}`}
             onClick={() => setActiveCategory(cat)}
-            className={`px-3 py-1 text-xs font-mono rounded-lg capitalize transition duration-200 ${
+            className={`px-3 py-1 text-xs font-mono rounded-lg capitalize transition duration-200 shrink-0 ${
               activeCategory === cat
                 ? 'bg-slate-850 text-white font-medium border border-slate-700'
                 : 'text-slate-400 hover:text-white'

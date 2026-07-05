@@ -103,13 +103,13 @@ export const ReleaseShowcase: React.FC = () => {
         </div>
 
         {/* Dynamic Category Selector */}
-        <div className="flex flex-wrap p-1 bg-slate-950/80 border border-slate-800/80 rounded-xl max-w-max">
+        <div className="flex overflow-x-auto p-1 bg-slate-950/80 border border-slate-800/80 rounded-xl max-w-full scrollbar-none">
           {(['all', 'album', 'single', 'remix'] as const).map((cat) => (
             <button
               key={cat}
               id={`release-filter-${cat}`}
               onClick={() => setFilter(cat)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition duration-200 capitalize ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition duration-200 capitalize shrink-0 ${
                 filter === cat
                   ? 'bg-violet-500 text-slate-100 font-bold shadow-lg shadow-violet-500/20'
                   : 'text-slate-400 hover:text-white hover:bg-slate-900'

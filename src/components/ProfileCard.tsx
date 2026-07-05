@@ -32,7 +32,7 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({ onSelectService }) => 
   };
 
   return (
-    <div className="flex flex-col gap-6 bg-slate-900/60 backdrop-blur-md border border-slate-800 p-6 rounded-2xl text-slate-100" id="profile-card">
+    <div className="flex flex-col gap-6 bg-slate-900/60 backdrop-blur-md border border-slate-800 p-4 sm:p-6 rounded-2xl text-slate-100" id="profile-card">
       {/* Profile Header */}
       <div className="flex flex-col sm:flex-row gap-5 items-center sm:items-start text-center sm:text-left">
         <div className="relative shrink-0">
@@ -76,9 +76,9 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({ onSelectService }) => 
       </div>
 
       {/* Musical Metrics */}
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-3 gap-2 sm:gap-3">
         {ARTIST_PROFILE.stats.map((stat, idx) => (
-          <div key={idx} className="bg-slate-950/40 border border-slate-800/50 p-3 rounded-xl text-center">
+          <div key={idx} className="bg-slate-950/40 border border-slate-800/50 p-2 sm:p-3 rounded-xl text-center">
             <div className="text-lg font-bold text-white tracking-tight font-mono">{stat.value}</div>
             <div className="text-[9px] uppercase tracking-wider text-slate-500 font-bold mt-1 leading-tight">{stat.label}</div>
           </div>
