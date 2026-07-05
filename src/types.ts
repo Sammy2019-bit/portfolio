@@ -1,37 +1,39 @@
-export interface Project {
+export interface Release {
   id: string;
   title: string;
+  type: 'album' | 'single' | 'remix';
+  releaseDate: string;
   description: string;
-  category: 'frontend' | 'fullstack' | 'devops';
   tags: string[];
-  stats: {
-    stars?: number;
+  metrics: {
+    streams?: string;
     downloads?: string;
-    lighthouseScore?: number;
+    beatportRank?: string;
   };
-  featured: boolean;
   image: string;
+  audioUrl?: string; // Standard or preview simulated track
 }
 
-export interface Skill {
+export interface ArtistSkill {
   name: string;
-  category: 'languages' | 'frameworks' | 'tools';
+  category: 'production' | 'performance' | 'engineering';
   level: number; // 0 to 100
   iconName: string;
 }
 
-export interface Experience {
+export interface GigMilestone {
   id: string;
-  role: string;
-  company: string;
-  period: string;
-  description: string;
-  achievements: string[];
+  venue: string;
+  city: string;
+  date: string;
+  role: string; // e.g., Headliner, Support Set, Festival Act
+  highlights: string[];
 }
 
-export interface ServiceEstimate {
+export interface BookingEstimate {
   serviceType: string;
-  complexity: 'simple' | 'medium' | 'complex';
-  timeline: string;
-  priceEstimate: number;
+  venueCapacity: 'small' | 'medium' | 'large';
+  durationHours: number;
+  travelRequired: boolean;
+  basePrice: number;
 }

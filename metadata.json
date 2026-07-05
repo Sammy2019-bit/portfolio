@@ -1,6 +1,6 @@
 {
-  "name": "Web Developer Portfolio",
-  "description": "An interactive, single-screen portfolio for a professional web developer.",
+  "name": "Music Artist Portfolio",
+  "description": "An interactive, single-screen portfolio for a professional music artist and producer featuring a release gallery, performance history, and booking rate estimator.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

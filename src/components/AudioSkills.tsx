@@ -1,58 +1,56 @@
 import React, { useState } from 'react';
-import { SKILLS_DATA } from '../data/developerData';
+import { ARTIST_SKILLS_DATA } from '../data/artistData';
 import { motion } from 'motion/react';
 import { 
-  Code2, 
-  Server, 
-  Terminal, 
   Cpu, 
+  Sliders, 
+  Mic, 
+  Music, 
   Layers, 
-  Layout, 
-  Network, 
-  Palette, 
-  Database, 
-  Cloud, 
-  GitBranch, 
-  Sparkles,
+  Disc, 
+  Activity, 
+  Cable, 
+  Sparkles, 
+  Headphones, 
+  Tv,
   ToggleLeft,
   ToggleRight
 } from 'lucide-react';
 
-export const SkillsConsole: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState<'all' | 'languages' | 'frameworks' | 'tools'>('all');
+export const AudioSkills: React.FC = () => {
+  const [activeCategory, setActiveCategory] = useState<'all' | 'production' | 'performance' | 'engineering'>('all');
   const [viewMetric, setViewMetric] = useState<'mastery' | 'experience'>('mastery');
 
   // Map icon names to lucide react icons
   const iconMap: Record<string, React.ReactNode> = {
-    "code-2": <Code2 className="w-4 h-4 text-amber-500" />,
-    "server": <Server className="w-4 h-4 text-amber-500" />,
-    "terminal": <Terminal className="w-4 h-4 text-amber-500" />,
-    "cpu": <Cpu className="w-4 h-4 text-amber-500" />,
-    "layers": <Layers className="w-4 h-4 text-amber-500" />,
-    "layout": <Layout className="w-4 h-4 text-amber-500" />,
-    "network": <Network className="w-4 h-4 text-amber-500" />,
-    "palette": <Palette className="w-4 h-4 text-amber-500" />,
-    "database": <Database className="w-4 h-4 text-amber-500" />,
-    "cloud": <Cloud className="w-4 h-4 text-amber-500" />,
-    "git-branch": <GitBranch className="w-4 h-4 text-amber-500" />,
-    "sparkles": <Sparkles className="w-4 h-4 text-amber-500" />
+    "cpu": <Cpu className="w-4 h-4 text-violet-400" />,
+    "sliders": <Sliders className="w-4 h-4 text-violet-400" />,
+    "mic": <Mic className="w-4 h-4 text-violet-400" />,
+    "music": <Music className="w-4 h-4 text-violet-400" />,
+    "layers": <Layers className="w-4 h-4 text-violet-400" />,
+    "disc": <Disc className="w-4 h-4 text-violet-400" />,
+    "activity": <Activity className="w-4 h-4 text-violet-400" />,
+    "cable": <Cable className="w-4 h-4 text-violet-400" />,
+    "sparkles": <Sparkles className="w-4 h-4 text-violet-400" />,
+    "headphones": <Headphones className="w-4 h-4 text-violet-400" />,
+    "tv": <Tv className="w-4 h-4 text-violet-400" />
   };
 
-  const filteredSkills = SKILLS_DATA.filter(skill => {
+  const filteredSkills = ARTIST_SKILLS_DATA.filter(skill => {
     if (activeCategory === 'all') return true;
     return skill.category === activeCategory;
   });
 
   return (
-    <div className="bg-slate-900/60 backdrop-blur-md border border-slate-800 p-6 rounded-2xl flex flex-col gap-5" id="skills-console">
+    <div className="bg-slate-900/60 backdrop-blur-md border border-slate-800 p-6 rounded-2xl flex flex-col gap-5" id="audio-skills-console">
       {/* Console Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h3 className="text-base font-bold text-white tracking-tight flex items-center gap-2">
-            <Cpu className="w-4 h-4 text-amber-500" />
-            <span>Interactive Tech Stack</span>
+            <Sliders className="w-4 h-4 text-violet-400" />
+            <span>Interactive Production Rig & Tech</span>
           </h3>
-          <p className="text-xs text-slate-400 mt-0.5">Toggle filter categories or customize metric calculations.</p>
+          <p className="text-xs text-slate-400 mt-0.5">Toggle categories to explore software protocols and live hardware fluencies.</p>
         </div>
 
         {/* View Metric Toggler */}
@@ -65,25 +63,25 @@ export const SkillsConsole: React.FC = () => {
           {viewMetric === 'mastery' ? (
             <ToggleLeft className="w-4 h-4 text-slate-500" />
           ) : (
-            <ToggleRight className="w-4 h-4 text-amber-500" />
+            <ToggleRight className="w-4 h-4 text-violet-500" />
           )}
         </button>
       </div>
 
       {/* Category Tabs */}
       <div className="flex flex-wrap gap-1.5 p-1 bg-slate-950/60 border border-slate-800/80 rounded-xl max-w-max">
-        {(['all', 'languages', 'frameworks', 'tools'] as const).map((cat) => (
+        {(['all', 'production', 'engineering', 'performance'] as const).map((cat) => (
           <button
             key={cat}
             id={`skill-cat-${cat}`}
             onClick={() => setActiveCategory(cat)}
             className={`px-3 py-1 text-xs font-mono rounded-lg capitalize transition duration-200 ${
               activeCategory === cat
-                ? 'bg-slate-800 text-white font-medium border border-slate-700'
+                ? 'bg-slate-850 text-white font-medium border border-slate-700'
                 : 'text-slate-400 hover:text-white'
             }`}
           >
-            {cat === 'tools' ? 'Tools & DBs' : cat}
+            {cat === 'all' ? 'All Skills' : cat}
           </button>
         ))}
       </div>
@@ -92,7 +90,7 @@ export const SkillsConsole: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {filteredSkills.map((skill, index) => {
           // Dynamic calculation of experience based on mastery level for realism
-          const yearsOfExp = Math.round((skill.level / 15) * 10) / 10;
+          const yearsOfExp = Math.round((skill.level / 12) * 10) / 10;
           const displayVal = viewMetric === 'mastery' 
             ? `${skill.level}%` 
             : `${yearsOfExp} yrs`;
@@ -100,17 +98,17 @@ export const SkillsConsole: React.FC = () => {
           return (
             <div 
               key={skill.name} 
-              className="bg-slate-950/30 border border-slate-800/40 p-3.5 rounded-xl flex flex-col gap-2.5 hover:border-slate-800/80 transition duration-200"
+              className="bg-slate-950/30 border border-slate-800/40 p-3.5 rounded-xl flex flex-col gap-2.5 hover:border-slate-800/85 transition duration-200"
               id={`skill-item-${index}`}
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2.5">
                   <div className="bg-slate-900 border border-slate-800 p-1.5 rounded-lg">
-                    {iconMap[skill.iconName] || <Code2 className="w-4 h-4 text-amber-500" />}
+                    {iconMap[skill.iconName] || <Music className="w-4 h-4 text-violet-400" />}
                   </div>
                   <span className="text-xs font-semibold text-slate-200">{skill.name}</span>
                 </div>
-                <span className="text-xs font-mono text-amber-400 font-medium bg-slate-950 px-2 py-0.5 rounded border border-slate-800">
+                <span className="text-xs font-mono text-violet-400 font-medium bg-slate-950 px-2 py-0.5 rounded border border-slate-800">
                   {displayVal}
                 </span>
               </div>
@@ -121,7 +119,7 @@ export const SkillsConsole: React.FC = () => {
                   initial={{ width: 0 }}
                   animate={{ width: `${skill.level}%` }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
-                  className="h-full bg-gradient-to-r from-amber-500 to-amber-400 rounded-full"
+                  className="h-full bg-gradient-to-r from-violet-500 to-indigo-400 rounded-full"
                 />
               </div>
             </div>
