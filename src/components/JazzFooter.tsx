@@ -34,11 +34,11 @@ export const JazzFooter: React.FC<FooterProps> = ({ onScrollToTop }) => {
                 BILLOSONGS
               </span>
               <span className="font-mono text-[9px] tracking-[0.35em] text-emerald-500 font-medium -mt-1">
-                AMERICAN JAZZ STUDIO
+                NIGERIAN JAZZ STUDIO
               </span>
             </div>
             <p className="text-gray-400 text-xs leading-relaxed max-w-sm">
-              An interactive classical portfolio simulation. Blending early 20th century American saxophone loops with custom-engineered 808 sub trap synthesis.
+              An interactive classical portfolio simulation. Blending vintage West African highlife rhythms and smoky Nigerian Jazz with custom-engineered 808 sub trap synthesis.
             </p>
           </div>
 

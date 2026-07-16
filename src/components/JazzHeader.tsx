@@ -39,7 +39,7 @@ export const JazzHeader: React.FC<HeaderProps> = ({ onNavClick, cartCount, onOpe
             BILLOSONGS
           </span>
           <span className="font-mono text-[9px] tracking-[0.4em] text-emerald-500 font-medium -mt-1 group-hover:text-emerald-300 transition-colors duration-300">
-            AMERICAN JAZZ STUDIO
+            NIGERIAN JAZZ STUDIO
           </span>
         </div>
 

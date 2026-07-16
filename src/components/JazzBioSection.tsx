@@ -12,19 +12,19 @@ export const JazzBioSection: React.FC = () => {
     {
       id: 0,
       title: 'Acoustic Setup',
-      desc: 'billosongs recording acoustic brass loops in Studio B, blending tube mics with analog desks.',
+      desc: 'billosongs tracking live horn sections and percussion loops in Lagos, marrying vintage warm mics with state-of-the-art analog consoles.',
       img: 'https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=300&q=80'
     },
     {
       id: 1,
       title: 'Beats & Synths',
-      desc: 'Developing deep sub-bass glides and synth filters for the signature Jazz Trap beat catalogs.',
+      desc: 'Developing deep sub-bass slides and polyrhythmic Afrobeat-jazz drum foundations for the signature beat catalogs.',
       img: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=300&q=80'
     },
     {
       id: 2,
       title: 'The Instrument',
-      desc: 'Vintage Selmer Mark VI tenor saxophone used in all premium audio stems and performance tracks.',
+      desc: 'The vintage Selmer Mark VI tenor saxophone that produces the signature, rich smoky tones featured in all live performance tracks.',
       img: 'https://images.unsplash.com/photo-1525994886773-080587e161c2?auto=format&fit=crop&w=300&q=80'
     }
   ];
@@ -47,10 +47,10 @@ export const JazzBioSection: React.FC = () => {
             
             <div className="space-y-6 text-gray-400 text-sm md:text-base leading-relaxed font-sans font-light">
               <p>
-                <span className="text-white font-medium text-lg font-serif">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                <span className="text-white font-medium text-lg font-serif">billosongs</span> is an innovative Nigerian multi-instrumentalist, saxophonist, and music producer hailing from Lagos. Recognized for pioneering a pristine style that bridges traditional West African grooves, highlife, and Fuji with the smokiness of classical jazz, billosongs redefines what modern jazz fusion can be.
               </p>
               <p>
-                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Armed with an exquisite vintage tenor saxophone and deep knowledge of analog synthesis, billosongs blends warm, acoustic brass solos with high-performance 808 slides, dusty vinyl lofi textures, and modern drill elements. This interactive platform invites you to explore original compositions, license production-ready beats, and customize live performance audio presets directly on the browser.
               </p>
             </div>
           </div>

@@ -37,13 +37,13 @@ export const JazzHero: React.FC<HeroProps> = ({ onExploreClick }) => {
           </div>
 
           <h1 className="font-serif text-5xl md:text-7xl xl:text-8xl text-white tracking-tight leading-none">
-            Classical <span className="text-emerald-400 italic block mt-1">Rhythms</span> 
+            Nigerian <span className="text-emerald-400 italic block mt-1">Jazz Fusion</span> 
             Modern Beats.
           </h1>
 
           <p className="text-gray-300 text-sm md:text-base max-w-xl leading-relaxed font-sans font-light">
-            Welcome to the interactive portfolio of <span className="text-white font-medium">billosongs</span>. 
-            Blending the legendary, timeless, smoky elements of American Jazz with high-performance 808 trap rhythms, vintage lofi swings, and deep cinematic scores. Explore albums, grab high-fidelity licenses, and book performance sessions.
+            Welcome to the interactive portfolio of <span className="text-white font-medium">billosongs</span>, the acclaimed Nigerian jazz saxophonist and multi-instrumentalist. 
+            Blending the legendary, timeless, smoky elements of classic Jazz with rich West African Afrobeat grooves, high-performance 808 trap rhythms, and vintage lofi swings. Explore albums, lease custom beats, and book global live performances.
           </p>
 
           {/* Core Interactive Actions */}
@@ -105,7 +105,7 @@ export const JazzHero: React.FC<HeroProps> = ({ onExploreClick }) => {
                 billosongs
               </span>
               <span className="font-mono text-[10px] text-gray-400 block mt-0.5">
-                Multi-Instrumentalist, Arranger & Sound Designer
+                Nigerian Multi-Instrumentalist, Saxophonist & Sound Designer
               </span>
             </div>
           </div>

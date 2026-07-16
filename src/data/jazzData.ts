@@ -55,77 +55,77 @@ export const BILLO_SOCIALS = [
 export const JAZZ_NEWS: NewsItem[] = [
   {
     id: 'news-1',
-    title: 'Text of the printing and typesetting',
-    date: 'March 20, 2026, New York',
-    description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    title: 'Pioneering the Afro-Jazz Fusion Soundscape',
+    date: 'March 20, 2026, Lagos',
+    description: "Billosongs details his creative process of combining traditional Yoruba talking drum loops with early 20th-century classical saxophone frameworks in his upcoming project."
   },
   {
     id: 'news-2',
-    title: 'Classic Rhythm meets Modern Beat Leases',
+    title: 'Classic Highlife meets Modern 808 Bass Leases',
     date: 'February 15, 2026, London',
-    description: 'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Billosongs announces his new live beat-making sessions.'
+    description: 'Surpassing standard loop styling, billosongs announces a brand new catalog of interactive beat leases featuring live-recorded sax stems and native talking drums.'
   },
   {
     id: 'news-3',
-    title: 'The Resonance of Acoustic Saxophones',
-    date: 'January 10, 2026, Paris',
-    description: 'A close look into the recording process of the newly anticipated album "Sax in the City" using flat reference monitors and vintage vacuum tube microphones.'
+    title: 'The Resonance of Acoustic African Brass',
+    date: 'January 10, 2026, Abuja',
+    description: "A deep-dive review on billosongs' custom vintage vacuum tube microphones and acoustic chambers used to record premium wind ensembles for maximum analog warmth."
   }
 ];
 
 export const TOUR_DATES: TourDate[] = [
-  { id: 'tour-1', dateStr: 'DEC 29', monthDay: 'DEC 29', year: '2026', venue: 'Chelsea Rocks', city: 'NEW YORK', status: 'Available' },
-  { id: 'tour-2', dateStr: 'JAN 22', monthDay: 'JAN 22', year: '2027', venue: 'RPM', city: 'TORONTO', status: 'Limited' },
-  { id: 'tour-3', dateStr: 'FEB 09', monthDay: 'FEB 09', year: '2027', venue: 'Massey Hall', city: 'SAN FRANCISCO', status: 'Available' },
-  { id: 'tour-4', dateStr: 'MAR 30', monthDay: 'MAR 30', year: '2027', venue: 'Elbow Room', city: 'MIAMI', status: 'Sold Out' },
-  { id: 'tour-5', dateStr: 'APR 19', monthDay: 'APR 19', year: '2027', venue: 'Easy and the 5th', city: 'LOS ANGELES', status: 'Available' }
+  { id: 'tour-1', dateStr: 'DEC 29', monthDay: 'DEC 29', year: '2026', venue: 'The New Afrika Shrine', city: 'LAGOS', status: 'Available' },
+  { id: 'tour-2', dateStr: 'JAN 22', monthDay: 'JAN 22', year: '2027', venue: 'Jazz Cafe', city: 'LONDON', status: 'Limited' },
+  { id: 'tour-3', dateStr: 'FEB 09', monthDay: 'FEB 09', year: '2027', venue: 'Alliance Française', city: 'LAGOS', status: 'Available' },
+  { id: 'tour-4', dateStr: 'MAR 30', monthDay: 'MAR 30', year: '2027', venue: 'Transcorp Hilton Dome', city: 'ABUJA', status: 'Sold Out' },
+  { id: 'tour-5', dateStr: 'APR 19', monthDay: 'APR 19', year: '2027', venue: 'Blue Note Jazz Club', city: 'NEW YORK', status: 'Available' }
 ];
 
 export const ALBUM_TRACKS: TrackItem[] = [
-  { id: 'track-1', title: 'Human Nature', duration: '03:44', mood: 'Calm Jazz' },
-  { id: 'track-2', title: 'Thinking Free again', duration: '04:00', mood: 'Mellow Sax' },
-  { id: 'track-3', title: 'Rainy Day', duration: '05:23', mood: 'Late Night Blues' },
-  { id: 'track-4', title: 'Back to the beat', duration: '02:12', mood: 'Groovy Swing' },
-  { id: 'track-5', title: 'Get it on', duration: '03:22', mood: 'Uptempo Session' }
+  { id: 'track-1', title: 'Lagos Rain & Brass', duration: '03:44', mood: 'Calm Afro-Jazz' },
+  { id: 'track-2', title: 'Eko Wind Serenade', duration: '04:00', mood: 'Mellow Sax' },
+  { id: 'track-3', title: 'Late Night Lekki Blues', duration: '05:23', mood: 'Late Night Chill' },
+  { id: 'track-4', title: 'Fuji-Jazz Poly-Rhythms', duration: '02:12', mood: 'Uptempo Fusion' },
+  { id: 'track-5', title: 'Sunset on Broad Street', duration: '03:22', mood: 'Warm Sax Groove' }
 ];
 
 export const BEAT_MARKETPLACE: BeatItem[] = [
   {
     id: 'beat-1',
-    name: 'Sax in the City (Jazz Trap)',
-    genre: 'Jazz Trap / Drill',
-    bpm: 140,
+    name: 'Lagos Late Nights (Afro-Jazz)',
+    genre: 'Afro-Jazz / Drill',
+    bpm: 120,
     key: 'C Minor',
     price: 39,
-    description: 'Moody, late-night acoustic sax riffs paired with heavy sliding 808 sub-bass, sharp hats, and organic piano structures.',
+    description: 'Moody, late-night acoustic sax riffs paired with deep talking drums, heavy sliding 808 sub-bass, and organic piano structures.',
     image: 'https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?auto=format&fit=crop&w=600&q=80',
-    tags: ['Acoustic Sax', '808 Glide', 'Dark Trap']
+    tags: ['Acoustic Sax', 'Talking Drum', '808 Glide']
   },
   {
     id: 'beat-2',
-    name: 'Blue Velvet (Lofi Swing)',
-    genre: 'Lofi Jazz / Chillhop',
-    bpm: 85,
+    name: 'Eko Velvet (Highlife Lofi)',
+    genre: 'Highlife / Chillhop',
+    bpm: 90,
     key: 'F Major',
     price: 29,
-    description: 'Smooth vintage piano chords, clean ride cymbals, crackly vinyl layer, and a beautiful acoustic sax hook.',
+    description: 'Smooth vintage guitar chords, light Afro percussion, crackly vinyl layer, and a beautiful acoustic soprano sax hook.',
     image: 'https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=600&q=80',
-    tags: ['Vinyl Crackle', 'Mellow Keys', 'Lofi Sax']
+    tags: ['West African Highlife', 'Mellow Keys', 'Lofi Sax']
   },
   {
     id: 'beat-3',
-    name: 'Subterranean Session (Boom Bap)',
-    genre: 'Classic Boom Bap',
-    bpm: 92,
+    name: 'Subterranean Shrine (Afrobeat)',
+    genre: 'Afrobeat / Boom Bap',
+    bpm: 95,
     key: 'G Minor',
     price: 49,
-    description: 'Heavy dusty jazz drums, upright acoustic bass loop, brass sample cuts, and a melodic tenor sax solo overlay.',
+    description: 'Heavy dusty jazz drums mixed with polyrhythmic percussion loops, upright acoustic bass, and a melodic tenor sax solo overlay.',
     image: 'https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=600&q=80',
-    tags: ['Upright Bass', 'Dusty Breaks', 'Brass Cuts']
+    tags: ['Polyrhythmic Percussion', 'Upright Bass', 'Brass Cuts']
   },
   {
     id: 'beat-4',
-    name: 'Midnight Reverie (Chill Synth)',
+    name: 'Broad Street Reverie (Warm Synth)',
     genre: 'Synthwave Jazz',
     bpm: 110,
     key: 'A Minor',
